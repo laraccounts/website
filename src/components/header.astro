@@ -1,0 +1,24 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<header
+  id="page-header"
+  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+>
+  <a class="flex items-center gap-0 hover:!text-default" href="#">
+    <h1 class="sr-only">Laraccounts</h1>
+    <Icon name="logomark-alt-transparent-sm" class="h-10" />
+    <Icon name="wordmark-transparent" class="hidden h-12 sm:block" />
+  </a>
+</header>
+
+<style>
+  .fixed-header {
+    @apply fixed top-0 bottom-auto;
+    @apply border-default bg-default text-default;
+  }
+  .modal.is-open {
+    @apply block;
+  }
+</style>
